@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web calculator </title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <div class="information">
+          <h1> 
+            DEVELOPED BY, PRABHAT KUMAR MISHRA 
+          </h1>
+        </div>
+            <div class="container">
+            <form>
+
+                <div class="calculator">
+                    <div class="display">
+                        <input type="text" name="Display">
+                    </div>
+                    <div>
+                        <input type="button" value="AC" onclick="Display.value=''">
+                        <input type="button" value="DE" onclick="Display.value= Display.value.toString().slice(0,-1)">
+                        <input type="button" value="." onclick="Display.value +='.'">
+                        <input type="button" value="/" onclick="Display.value +='/'">
+
+                    </div>
+                    <div>
+                        <input type="button" value="7" onclick="Display.value +='7'">
+                        <input type="button" value="8" onclick="Display.value +='8'">
+                        <input type="button" value="9" onclick="Display.value +='9'">
+                        <input type="button" value="*" onclick="Display.value +='*'">
+
+                    </div>
+                    <div>
+                        <input type="button" value="4" onclick="Display.value +='4'">
+                        <input type="button" value="5" onclick="Display.value +='5'">
+                        <input type="button" value="6" onclick="Display.value +='6'">
+                        <input type="button" value="-" onclick="Display.value +='-'">
+
+                    </div>
+                    <div>
+                        <input type="button" value="1" onclick="Display.value +='1'">
+                        <input type="button" value="2" onclick="Display.value +='2'">
+                        <input type="button" value="3" onclick="Display.value +='3'">
+                        <input type="button" value="+" onclick="Display.value +='+'">
+
+                    </div>
+                    <div>
+                        <input type="button" value="0" onclick="Display.value +='0'">
+                        <input type="button" value="00" onclick="Display.value +='00'">
+                        <input type="button" value="=" class="equal" onclick="Display.value=eval(Display.value)">
+
+
+                    </div>
+
+                </div>
+            </form>
+            
+        </div>
+        <div class="details">
+        <marquee><b>Contact Details: 7004596360,  prabahtmishra3112@gmail.com </b></marquee>
+        </div>
+    </div>
+</body>
+
+</html> 
